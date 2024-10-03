@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <title> To Do List</title>
+</head>
+<body class="body">
+    <div class="side-bare">
+        <div class="To-do-list">
+            <i class="fa-solid fa-check-square"></i>
+            To-Do List App
+        </div>
+
+        <hr style="border: 1px solid rgb(107, 167, 251); width: 70%; margin: -60px -10px;">
+
+        <div class="timer">
+           <div class="icon-timer">
+                <i class="fa-solid fa-clock" id="icon-timer"></i> 
+           </div>
+            <div class="text-container-timer"> Timer</div>
+        </div>
+
+        <div class="home">
+            <div class="icon-home">
+                <i class="fa-solid fa-home" id="icon-home"></i>
+            </div>
+            <div class="text-container-home"> Home</div>
+         </div>
+
+        <div class="note">
+            <div class="icon-note">
+                <i class="fa-solid fa-book" id="icon-note"></i>
+            </div>
+            <div class="text-container-note">Notes</div>
+        </div>
+
+        <div class="dark-mood">
+            <div class="icon-1">
+                <i class="fa-solid fa-sun" id="sun-icon"></i>
+            </div>
+            <button class="darkMood">
+                <div class="icon">
+                    <i class="fa-solid fa-circle" id="circle"></i>
+                </div>
+            </button>
+            <div class="icon-2">
+                <i class="fa-solid fa-moon" id="moon-icon"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-bare">
+
+        <div class="title">
+            Home
+        </div>
+
+        <div class="date">
+            <p class="st">
+                <
+            </p>
+            <div class="text-container-date">
+                May, 31, 2023
+            </div>
+            <i class="fas fa-calendar"></i>
+            <p class="nd">
+                >
+            </p>
+        </div>
+
+        <div class="add-task">
+            <button class="add-task-btn">
+                <i class="fas fa-plus" id="plus-icon"></i>
+                <div class="add-task-btn-text">
+                    Add Task
+                </div>
+            </button>
+        </div>
+        
+
+    </div>
+
+    <div class="tasks-container">
+        <div class="to-do">
+            <i class="fas fa-pen-to-square"></i>
+            <h2 class="to-do-list-title">
+                To-do List
+            </h2>
+            <hr style="border: 1px solid rgb(107, 167, 251); width: 70%;">
+            <div class="to-do-list-container"></div>
+        </div>
+    
+        <div class="progress">
+            <i class="fa fa-circle-notch fa-spin"></i>
+            <h2 class="progress-title">
+                In progress
+            </h2>
+            <hr style="border: 1px solid rgb(107, 167, 251); width: 70%;">
+            <div class="progress-container"></div>
+        </div>
+    
+        <div class="done">
+            <i class="fas fa-check-circle"></i>
+            <h2 class="done-title">
+                Done
+            </h2>
+            <hr style="border: 1px solid rgb(107, 167, 251); width: 70%;">
+            <div class="done-container"></div>
+        </div>
+        
+        <div class="timercontainer">
+    
+            <div id="time">00:00:00</div>
+            
+            <div class="timebtn">
+                <button id="startStopBtn"><i class="fa-solid fa-play" id="play"></i></button>
+                <button id="resetBtn">
+                    <i class="fa-solid fa-arrow-rotate-left" id="reset"></i>
+                </button>
+            </div>
+    
+        </div>
+
+        <div class="noteContainer">
+            <h2 class="note-title">
+                Notes
+            </h2>
+            <hr style="border: 1px solid rgb(107, 167, 251); width: 70%;">
+            <div class="notes"></div>
+            <div class="add-note">
+                <input type="text" placeholder="Note"  class="input-note">
+                <div class="note-icon">
+                    <i class="fas fa-check" id="note-icon"></i>
+                </div>
+            </div>
+            <div class="notes"></div>
+        </div>
+    
+    </div>
+
+    
+    
+    
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
